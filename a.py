@@ -29,4 +29,13 @@ if ip == 'd':
     s.close()
     f.close()
 elif ip == 'j':
-    print "work"
+    print "enter no. of chunks (parts)"
+    no = input()
+    n = "part"
+    c = open("nf.mp4","w+b")
+    for i in range(no):
+        f = open((n+str(i)),"rb")
+        data = f.read()
+        c.write(data)
+        f.close()
+    c.close()
