@@ -3,7 +3,7 @@ print "press j if you want to join files and d for dividing \n"
 ip = raw_input()
 if ip == 'd':
     n = "part"
-    print "enter path and file should be atleast 5 mb for fuck sake \n"
+    print "enter path and file should be atleast 5 mb  \n"
     path = raw_input()
     f = open(path,"r+b")
     sc = os.path.getsize(path)
