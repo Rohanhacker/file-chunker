@@ -32,7 +32,9 @@ elif ip == 'j':
     print "enter no. of chunks (parts)"
     no = input()
     n = "part"
-    c = open("nf.mp4","w+b")
+    print "extension of file "
+    ex = raw_input()
+    c = open("nf.{}".format(ex),"w+b")
     for i in range(no):
         f = open((n+str(i)),"rb")
         data = f.read()
